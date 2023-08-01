@@ -1,9 +1,3 @@
-<html>
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
-</head>
-
-<body>
 <header class="absolute inset-x-0 top-0 z-50">
 
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -62,7 +56,3 @@
     </div>
 
 </header>
-
-</body>
-
-</html>
