@@ -36,6 +36,6 @@ php artisan migrate --force
 # Exit maintenance mode
 php artisan up
 
-screen -dmS jcb php artisan octane:start --watch
+screen -dmS jcb php artisan octane:start --watch --host=127.0.0.1:8001
 
 echo "Deployment finished!"
