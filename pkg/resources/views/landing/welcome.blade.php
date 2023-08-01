@@ -1,10 +1,9 @@
 <x-guest-layout>
+
+    @livewire('header')
+
     <div class="bg-gray-900">
-
         <div class="bg-white">
-
-            <!-- Header -->
-            @livewire('header')
 
             <main>
 
@@ -26,7 +25,7 @@
                                 <h2 class="text-2xl font-bold tracking-tight text-white sm:text-6xl">Managed-Hosting, Softwareentwicklung, Beratung.</h2>
                                 <p class="mt-6 text-lg leading-8 text-gray-300">Skalieren Sie ihre digitale Infrastruktur aufs nächste Level, während Sie sich auf Ihre Kernaktivitäten konzentrieren.</p>
                                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                                    <a href="/onboarding" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Jetzt beraten lassen</a>
+                                    <a href="{{route('bookings.create')}}" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Jetzt beraten lassen</a>
                                     <a href="https://lisa.jan-bredow.de" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
                                 </div>
                             </div>
@@ -124,7 +123,6 @@
                     </div>
                 </div>
 
-
                 <!-- Header for testimonials-->
                 <div class="bg-white px-6 lg:px-8 py-5 sm:py-5">
                     <div class="mx-auto max-w-2xl text-center">
@@ -132,7 +130,6 @@
                         <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 text-center sm:text-6xl">Kundenrezensionen</h2>
                     </div>
                 </div>
-
 
                 <!-- Testimonial section -->
                 <section class="isolate overflow-hidden bg-white px-6 lg:px-8">
@@ -210,7 +207,7 @@
                                     Geteilter Server mit isolierten Diensten
                                 </li>
                             </ul>
-                            <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Get started today</a>
+                            <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren</a>
                         </div>
                         <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-gray-900 shadow-2xl">
                             <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Managed-Hosting</h3>
@@ -258,11 +255,12 @@
 
                 <!-- FAQ section  WIP, temporary placeholder-->
                 <div class="py-3"></div>
+
             </main>
+
         </div>
-
-        @livewire('footer')
-
     </div>
+
+    @livewire('footer')
 
 </x-guest-layout>
