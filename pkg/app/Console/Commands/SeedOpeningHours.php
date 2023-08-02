@@ -38,42 +38,72 @@ class SeedOpeningHours extends Command
      * Execute the console command.
      *
      * @return int
+     * @noinspection DuplicatedCode
      */
     public function handle()
     {
 
-        echo 'starting seeding opening hours..';
+        info('starting seeding opening hours.. \r\n');
 
-        $days = [
+        $days_morning = [
             'MONDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('16:30')
+                'end' => Carbon::parse('11:30')
             ],
             'TUESDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('16:30')
+                'end' => Carbon::parse('11:30')
             ],
             'WEDNESDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('16:30')
+                'end' => Carbon::parse('11:30')
             ],
             'THURSDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('16:30')
+                'end' => Carbon::parse('11:30')
             ],
             'FRIDAY' => [
                 'start' => Carbon::parse('08:00'),
+                'end' => Carbon::parse('11:30')
+            ],
+            'SATURDAY' => [
+                'start' => Carbon::parse('08:00'),
+                'end' => Carbon::parse('11:30')
+            ]
+        ];
+
+        $days_evening = [
+            'MONDAY' => [
+                'start' => Carbon::parse('13:00'),
+                'end' => Carbon::parse('16:30')
+            ],
+            'TUESDAY' => [
+                'start' => Carbon::parse('13:00'),
+                'end' => Carbon::parse('16:30')
+            ],
+            'WEDNESDAY' => [
+                'start' => Carbon::parse('13:00'),
+                'end' => Carbon::parse('16:30')
+            ],
+            'THURSDAY' => [
+                'start' => Carbon::parse('13:00'),
+                'end' => Carbon::parse('16:30')
+            ],
+            'FRIDAY' => [
+                'start' => Carbon::parse('13:00'),
                 'end' => Carbon::parse('16:30')
             ],
             'SATURDAY' => [
-                'start' => Carbon::parse('10:00'),
-                'end' => Carbon::parse('15:00')
+                'start' => Carbon::parse('13:00'),
+                'end' => Carbon::parse('16:30')
             ]
         ];
 
         $testCenter = TestCenter::first();
 
-        foreach ($days as $key => $day) {
+
+        info('saving morning openings... \r\n');
+        foreach ($days_morning as $key => $day) {
             $i = 0;
             while (
                 $day['start']->copy()->addMinutes(($i+1) * 30)
@@ -89,10 +119,31 @@ class SeedOpeningHours extends Command
                 $opening->testCenter()->associate($testCenter);
                 $opening->save();
                 $i++;
-                echo 'saving another opening';
+                info('saving another opening \r\n');
             }
-            echo 'saving another day';
+            info('saving another day \r\n');
         }
-        echo 'all saved.';
+
+        foreach ($days_evening as $key => $day) {
+            $i = 0;
+            while (
+                $day['start']->copy()->addMinutes(($i+1) * 30)
+                <=
+                $day['end']) {
+                $opening = TestCenterOpeningHour::make([
+                    "day" => $key,
+                    "capacity" => 1,
+                    "start" => $day['start']->copy()->addMinutes(30 * $i)->toTimeString(),
+                    "end" => $day['start']->copy()->addMinutes(30 * ($i + 1))->toTimeString()
+                ]);
+
+                $opening->testCenter()->associate($testCenter);
+                $opening->save();
+                $i++;
+                info('saving another opening \r\n');
+            }
+
+        }
+
     }
 }
