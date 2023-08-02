@@ -30,8 +30,8 @@
                     <div class="-my-6 divide-y divide-white/10 text-white">
                         <a href="{{route('welcome')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Startseite</a>
                         <a href="{{route('services')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Lösungen</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Blog</a>
-                        <a href="{{route('contact')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Kontakt</a>
+                        <!-- <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Blog</a>
+                        --><a href="{{route('contact')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Kontakt</a>
                     </div>
                     <div class="py-6">
                         <a href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50">Anmelden</a>
@@ -58,7 +58,7 @@
             <div class="hidden lg:flex lg:gap-x-12">
                 <a href="{{route('welcome')}}" class="text-sm font-semibold leading-6 text-white">Startseite</a>
                 <a href="{{route('services')}}" class="text-sm font-semibold leading-6 text-white">Lösungen</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white">Blog</a>
+                <!-- <a href="#" class="text-sm font-semibold leading-6 text-white">Blog</a> -->
                 <a href="{{route('contact')}}" class="text-sm font-semibold leading-6 text-white">Kontakt</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
