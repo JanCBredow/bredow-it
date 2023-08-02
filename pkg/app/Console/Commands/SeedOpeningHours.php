@@ -96,6 +96,21 @@ class SeedOpeningHours extends Command
 
         $testCenter = TestCenter::first();
 
+        foreach ($days_early as $key => $day) {
+            $i = 0;
+            while ($day['start']->copy()->addMinutes(($i+1) * 30) <= $day['end']) {
+                $opening = TestCenterOpeningHour::make([
+                    "day" => $key,
+                    "capacity" => 1,
+                    "start" => $day['start']->copy()->addMinutes(30 * $i)->toTimeString(),
+                    "end" => $day['start']->copy()->addMinutes(30 * ($i + 1))->toTimeString()
+                ]);
+                $opening->testCenter()->associate($testCenter);
+                $opening->save();
+                $i++;
+            }
+        }
+
         foreach ($days_evening as $key => $day) {
             $i = 0;
             while ($day['start']->copy()->addMinutes(($i+1) * 30) <= $day['end']) {
