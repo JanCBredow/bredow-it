@@ -1,12 +1,16 @@
 <div class="w-full flex flex-col">
+
+    <!-- SERVICE -->
     <div class="{{ $currentStep != 1 ? 'hidden' : '' }} w-full flex flex-col">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+
+
             <div class="bg-white rounded-lg shadow-xl p-6">
                 <h2 class="text-xl text-center md:text-left font-medium leading-6 text-gray-900">Allgemeine
                     Informationen</h2>
 
-                <p class="mt-2 text-gray-600">Wähle zuerst deinen Service. Du hast die Auswahl zwischen verschiedenen
-                    Tests. </p>
+                <p class="mt-2 text-gray-600">Wähle zuerst deinen Service.</p>
 
                 <h3 class="text-lg font-medium leading-6 text-gray-90 mt-4">Adresse</h3>
 
@@ -16,6 +20,7 @@
                     <p>{{ $testCenter->location->zip }} {{ $testCenter->location->city }}</p>
                 </div>
             </div>
+
             <div class="bg-white rounded-lg shadow-xl p-6 col-span-1 md:col-span-2">
                 <h2 class="text-xl text-center md:text-left font-medium leading-6 text-gray-900">Wähle deinen
                     Service</h2>
@@ -56,6 +61,7 @@
         </div>
     </div>
 
+    <!-- APPOINTMENT -->
     <div class="{{ $currentStep != 2 ? 'hidden' : '' }} w-full flex flex-col">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="bg-white rounded-lg shadow-xl p-6">
@@ -63,7 +69,7 @@
                 <h2 class="text-xl text-center md:text-left font-medium leading-6 text-gray-900">Terminauswahl</h2>
 
                 <p class="mt-2 text-gray-600">Du kannst flexibel über den ganzen Tag Termine aussuchen. Deinen Termin
-                    kannst du jederzeit bis zu einer Stune vorher storinieren.</p>
+                    kannst du jederzeit bis zu einer Stunde vorher storinieren.</p>
 
                 <h3 class="text-lg font-medium leading-6 text-gray-90 mt-4">Öffnungszeiten</h3>
 
@@ -127,6 +133,7 @@
         </div>
     </div>
 
+    <!-- CUSTOMER ACCOUNTING SETUP -->
     <div class="{{ $currentStep != 3 ? 'hidden' : '' }} w-full flex flex-col gap-4">
         @if(!Auth::check())
             <div class="grid md:grid-cols-2 md:gap-6 bg-white rounded-lg shadow-xl p-6">
@@ -189,7 +196,7 @@
                 <h2 class="text-xl text-center md:text-left font-medium leading-6 text-gray-900">Persönliche
                     Informationen</h2>
 
-                <p class="mt-2 text-gray-600">Für die Durchführung deines Tests brauchen wir einige Informationen von
+                <p class="mt-2 text-gray-600">Für die Buchung deines Termines brauchen wir einige Informationen von
                     dir.</p>
 
                 <h3 class="text-lg font-medium leading-6 text-gray-90 mt-4">Termin</h3>
@@ -198,7 +205,7 @@
                     <p>{{ \Carbon\Carbon::parse($date)->format('d.m.Y') }} {{ \Carbon\Carbon::parse($time)->format('H:i') }}</p>
                 </div>
 
-                <h3 class="text-lg font-medium leading-6 text-gray-90 mt-4">Testzentrum</h3>
+                <h3 class="text-lg font-medium leading-6 text-gray-90 mt-4">Standort</h3>
 
                 <div class="text-gray-600">
                     <p>{{ $testCenter->name }}</p>
@@ -312,26 +319,12 @@
                                            class="block text-sm font-medium text-gray-700">Geburtstag</label>
                                     <div class="mt-1">
                                         <input wire:model="bday" type="text" name="bday" id="bday"
-                                               placeholder="DD.MM.YYYY"
+                                               placeholder="TT.MM.JJJJ"
                                                class="@error('bday') border-red-300 text-red-900 placeholder-red-300 @enderror shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                                                required>
                                     </div>
                                 </div>
                             </div>
-
-                            @if($service->perso_required)
-                                <div class="mt-1 col-span-2">
-                                    <label for="persouuid"
-                                           class="block text-sm font-medium text-gray-700">Personalausweisnummer (Nur
-                                        bei
-                                        PCR)</label>
-                                    <div class="mt-1">
-                                        <input wire:model="persouuid" type="text" name="persouuid" id="persouuid"
-                                               class="@error('persouuid') border-red-300 text-red-900 placeholder-red-300 @enderror shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                               placeholder="XXYY12345XX">
-                                    </div>
-                                </div>
-                            @endif
 
                             <div class="relative flex items-start">
                                 <div class="flex items-center h-5">
@@ -347,36 +340,6 @@
                                 </div>
                             </div>
 
-                            <div class="pt-6 sm:pt-5">
-                                <div class="mt-4 space-y-4">
-                                    <fieldset class="flex flex-col gap-8">
-                                        <div class="flex items-center gap-4">
-                                            <input wire:model="cwa" id="full" name="cwa" type="radio" value="full">
-                                            <label for="full"> EINWILLIGUNG ZUR PERSONALISIERTEN ÜBERMITTLUNG
-                                                (NAMENTLICHER TESTNACHWEIS): Hiermit erkläre ich mein Einverständnis zum Über
-                                                mitteln des Testergebnisses und meines pseudonymen Codes
-                                                an das Serversystem des RKI, damit ich mein Testergebnis mit der Corona Warn App abrufen kann. Ich willige
-                                                außerdem in die Übermittlung meines Namens und Geburtsdatums an die App ein, damit mein Test ergebnis in
-                                                der App als namentlicher Testnachweis angezeigt werden kann. Mir wurden Hinweise zum <a class="text-indigo-500"href="{{ route('privacy') }}">Datenschutz</a>
-                                                ausgehändigt. </label>
-                                        </div>
-                                        <div class="flex items-center gap-4">
-                                            <input wire:model="cwa" id="anon" name="cwa" type="radio" value="anon">
-                                            <label for="anon"> EINWILLIGUNG ZUR PSEUDONYMISIERTEN ÜBERMITTLUNG
-                                                (NICHT-NAMENTLICHE ANZEIGE): Hiermit erkläre ich mein Einverständnis zum Übermitteln meines Testergebnisses und meines pseudonymen
-                                                Codes an das Serversystem des RK I, damit ich mein Testergebnis mit der Corona Warn App abrufen kann. Das
-                                                Testergebnis in der App kann hierbei nicht als namentlicher Testnachweis verwendet werden. Mir wurden
-                                                Hinweise zum <a class="text-indigo-500" href="{{ route('privacy') }}">Datenschutz</a> ausgehändigt. </label>
-                                        </div>
-                                        <div class="flex items-center gap-4">
-                                            <input wire:model="cwa" id="none" name="cwa" type="radio" value="none">
-                                            <label for="none"> KEINE ÜBERMITTLUNG AN DIE
-                                                CORONA-WARN-APP </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-
                             <x-jet-button class="mx-auto block col-span-3" wire:click="book" wire:submit="book"
                                           wire:loading.attr="disabled">
                                 Termin buchen
@@ -387,6 +350,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="{{ $currentStep != 4 ? 'hidden' : '' }}">
         @if($booking)

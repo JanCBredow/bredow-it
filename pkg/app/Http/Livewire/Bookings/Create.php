@@ -100,7 +100,6 @@ class Create extends Component
             'city' => 'required',
             'street' => 'required',
             'housenr' => 'required',
-            'cwa' => 'required',
             'terms' => 'required|accepted'
         ]);
 
@@ -142,8 +141,7 @@ class Create extends Component
         User        $user,
         Service     $service,
         Appointment $appointment,
-        Patient     $patient,
-        string      $cwa
+        Patient     $patient
     )
     {
         $booking = Booking::make();
@@ -151,7 +149,6 @@ class Create extends Component
         $booking->service()->associate($service);
         $booking->appointment()->associate($appointment);
         $booking->patient()->associate($patient);
-        $booking->cwa = $cwa;
         $booking->save();
         return $booking;
     }

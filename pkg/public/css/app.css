@@ -3335,10 +3335,6 @@ select {
     padding-top: 6rem;
   }
 
-  .sm\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
   .sm\:text-left {
     text-align: left;
   }

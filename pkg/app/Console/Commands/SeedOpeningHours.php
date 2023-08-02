@@ -110,5 +110,7 @@ class SeedOpeningHours extends Command
                 $i++;
             }
         }
+
+        echo 'openings seeding done.';
     }
 }

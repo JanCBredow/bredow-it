@@ -374,11 +374,6 @@
                         <p>Standort: {{ $covidTest->appointment->testCenter->location->name }}</p>
                         <p>Service: {{ $covidTest->service->name }}</p>
 
-                        @if($covidTest->cwaQrCode)
-                            <p>Qr Code für Corona Warn App:</p>
-                            {!! $covidTest->cwaQrCode !!}
-                        @endif
-
                         <p>Sie haben die Information erhalten, dass Sie auf eine Infektion mit SARS-CoV2 getestet wurden.</p>
 
                         <p>Hieraus ergeben sich für Sie unmittelbare Konsequenzen und Pflichten.</p>
