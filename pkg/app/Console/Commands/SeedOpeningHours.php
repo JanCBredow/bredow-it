@@ -91,6 +91,8 @@ class SeedOpeningHours extends Command
                 $i++;
                 echo 'saving another opening';
             }
+            echo 'saving another day';
         }
+        echo 'all saved.';
     }
 }
