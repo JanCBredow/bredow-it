@@ -15,7 +15,7 @@ class SeedOpeningHours extends Command
      *
      * @var string
      */
-    protected $signature = 'opening:seed';
+    protected $signature = 'seedopenings:testcenter';
 
     /**
      * The console command description.
@@ -41,91 +41,47 @@ class SeedOpeningHours extends Command
      */
     public function handle()
     {
-        $days_early = [
+        $days = [
             'MONDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('12:00')
+                'end' => Carbon::parse('16:30')
             ],
             'TUESDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('12:00')
+                'end' => Carbon::parse('16:30')
             ],
             'WEDNESDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('12:00')
+                'end' => Carbon::parse('16:30')
             ],
             'THURSDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('12:00')
+                'end' => Carbon::parse('16:30')
             ],
             'FRIDAY' => [
                 'start' => Carbon::parse('08:00'),
-                'end' => Carbon::parse('12:00')
+                'end' => Carbon::parse('16:30')
             ],
             'SATURDAY' => [
                 'start' => Carbon::parse('10:00'),
-                'end' => Carbon::parse('12:00')
-            ]
-        ];
-        $days_evening = [
-            'MONDAY' => [
-                'start' => Carbon::parse('13:00'),
-                'end' => Carbon::parse('16:30')
-            ],
-            'TUESDAY' => [
-                'start' => Carbon::parse('13:00'),
-                'end' => Carbon::parse('16:30')
-            ],
-            'WEDNESDAY' => [
-                'start' => Carbon::parse('13:00'),
-                'end' => Carbon::parse('16:30')
-            ],
-            'THURSDAY' => [
-                'start' => Carbon::parse('13:00'),
-                'end' => Carbon::parse('16:30')
-            ],
-            'FRIDAY' => [
-                'start' => Carbon::parse('13:00'),
-                'end' => Carbon::parse('16:30')
-            ],
-            'SATURDAY' => [
-                'start' => Carbon::parse('15:00'),
-                'end' => Carbon::parse('16:00')
+                'end' => Carbon::parse('15:00')
             ]
         ];
 
         $testCenter = TestCenter::first();
-
-        foreach ($days_early as $key => $day) {
+        foreach ($days as $key => $day) {
             $i = 0;
-            while ($day['start']->copy()->addMinutes(($i+1) * 30) <= $day['end']) {
+            while ($day['start']->copy()->addMinutes(($i+1) * 10) <= $day['end']) {
                 $opening = TestCenterOpeningHour::make([
                     "day" => $key,
-                    "capacity" => 1,
-                    "start" => $day['start']->copy()->addMinutes(30 * $i)->toTimeString(),
-                    "end" => $day['start']->copy()->addMinutes(30 * ($i + 1))->toTimeString()
+                    "capacity" => 10,
+                    "start" => $day['start']->copy()->addMinutes(10 * $i)->toTimeString(),
+                    "end" => $day['start']->copy()->addMinutes(10 * ($i + 1))->toTimeString()
                 ]);
                 $opening->testCenter()->associate($testCenter);
                 $opening->save();
                 $i++;
             }
         }
-
-        foreach ($days_evening as $key => $day) {
-            $i = 0;
-            while ($day['start']->copy()->addMinutes(($i+1) * 30) <= $day['end']) {
-                $opening = TestCenterOpeningHour::make([
-                    "day" => $key,
-                    "capacity" => 1,
-                    "start" => $day['start']->copy()->addMinutes(30 * $i)->toTimeString(),
-                    "end" => $day['start']->copy()->addMinutes(30 * ($i + 1))->toTimeString()
-                ]);
-                $opening->testCenter()->associate($testCenter);
-                $opening->save();
-                $i++;
-            }
-        }
-
-        echo 'openings seeding done.';
     }
 }
