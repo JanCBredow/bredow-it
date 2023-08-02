@@ -185,6 +185,8 @@
       <path value="$PROJECT_DIR$/pkg/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/pkg/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/pkg/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/pkg/vendor/wire-elements/modal" />
+      <path value="$PROJECT_DIR$/pkg/vendor/spatie/laravel-package-tools" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

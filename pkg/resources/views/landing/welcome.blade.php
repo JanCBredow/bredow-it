@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    @livewire('header')
+    @livewire('landing-header')
 
     <div class="bg-gray-900">
         <div class="bg-white">

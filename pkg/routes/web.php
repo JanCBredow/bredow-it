@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\QrController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 ## ACP
@@ -19,11 +19,16 @@ Route::prefix('/bookings')->group(function () {
     });
 });
 
+Route::prefix('/contact')->group(function(){
+
+    Route::get('/', [ContactController::class, 'contact'])->name('contact');
+    Route::post('/', [ContactController::class, 'thankYou'])->name('contact-thanks');
+});
+
 ## Landing
 Route::get('/', function () {
     return view('landing.welcome');
 })->name('welcome');
-
 
 Route::get('/services', function () {
     return view('landing.services');
@@ -40,10 +45,6 @@ Route::get('/privacy', function () {
 Route::get('/faq', function () {
     return view('landing.faq');
 })->name('faq');
-
-Route::get('/contact', function () {
-    return view('landing.contact');
-})->name('contact');
 
 Route::get('/imprint', function () {
     return view('landing.imprint');
