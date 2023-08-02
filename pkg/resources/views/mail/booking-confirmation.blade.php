@@ -351,7 +351,7 @@
     </style>
 </head>
 <body>
-<span class="preheader">Ihr Termin wurde gebucht</span>
+<span class="preheader">Ihr Termin wurde gebucht.</span>
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
         <td>&nbsp;</td>
@@ -363,75 +363,37 @@
 
                     <div  class="center; text-center">
 
-                        <h1>Terminbestätigung zum Corona-Test</h1>
+                        <h1>Terminbestätigung von Bredow-IT</h1>
 
                         <p>{{ $booking->patient->name }} {{ $booking->patient->surename }}</p>
-                        <p>Ihr Termin: {{ $booking->appointment->date }} Uhr</p>
+                        <p>Ihr Termin: {{ $booking->appointment->date }}</p>
 
-                        <p>Art des Tests: {{ $booking->service->name }}</p>
+                        <p>Art des Termins: Beratungsgesrpäch {{ $booking->service->name }}</p>
 
-                        <p>Sie haben sich erfolgreich zum Test angemeldet.</p>
+                        <br>
 
-                        <p>Das Ergebnis erhalten Sie nach 15 Minuten per Mail oder ausgedruckt vor Ort. Dieser Test dient für nationale Zwecke, wie Kino, Restaurant, Schule usw.</p>
-                        <p>Das Testergebnis erhalten Sie standardmäßig in Deutsch.</p>
-
-                        <p>Wir weisen Sie darauf hin, dass nur Personen getestet werden dürfen, die keine Corona-Krankheitssymptome haben.</p>
-
-                        <p>Bitte erscheinen Sie pünktlich zum gebuchten Termin vor Ort und bringen Sie Ihren Personalausweis oder Reisepass mit.</p>
-                        <p>Ihr QR-Code zum Vorzeigen an der Anmeldung:</p>
-
-                        <!-- CHECK-IN-QR -->
-                        {!! $booking->qr_code !!}
-
-                        <p>{{ $booking->patient->name }} {{ $booking->patient->surename }}</p>
-
-                        <p>Falls der Code hier nicht angezeigt wird, öffnen Sie bitte die PDF-Datei im Anhang.</p>
-
-                        <p>Falls Sie Ihren Termin nicht wahrnehmen können, stornieren Sie diesen bitte hier.</p>
+                        <p>Ich rufe Sie (falls nicht anders verabredet) zum Zeitpunkt des Termins unter der Rufnummer {{ $booking->patient->phone }} an.</p>
 
 
                         <p>============ ENGLISH BELOW ============</p>
 
-                        <h1>Appointment confirmation for your corona test</h1>
+                        <h1>Appointment confirmation from Bredow-IT</h1>
 
 
                         <p>{{ $booking->patient->name }} {{ $booking->patient->surename }}</p>
-                        <p>Your appointment: {{ $booking->appointment->date }}</p>
+                        <p>Your Appointment: {{ $booking->appointment->date }}</p>
 
-                        <p>Test type: {{ $booking->service->name }}</p>
+                        <p>Service: consultation for {{ $booking->service->name }}</p>
 
-                        <p>You have successfully registered for the test.</p>
+                        <br>
 
-                        <p>We would like to point out that only persons who do not have any corona disease symptoms may be tested.</p>
-                        <p>Please arrive on time for the booked appointment on site and bring your identity card or passport.</p>
-                        <p>Your QR code to show at the registration desk:</p>
+                        <p>I will call you on the number {{ $booking->patient->phone }} when your appointment is ready. If we meet in person, you can ignore this.</p>
 
 
-                        <!-- CHECK-IN-QR -->
-                        {!! $booking->qr_code !!}
+                        <p>Mit freundlichen Grüßen / Greetings</p>
+                        <p>Bredow-IT</p>
 
-                        <p>{{ $booking->patient->name }} {{ $booking->patient->surename }}</p>
-                        <p>If the code is not displayed here, please open the PDF file in the attachment.</p>
-
-                        <p>If you are unable to keep your appointment, please cancel it here.</p>
-
-                        <p>Mit freundlichen Grüßen</p>
-
-                        <p>Diese Mail wurde im Auftrag von Lisa Systemserzeugt und automatisch durch https://lisa.systems versendet.</p>
-
-                        <p>Pflichtinformationen gemäß Artikel 13 DSGVO</p>
-                        <p>Im Falle des Erstkontakts sind wir gemäß Art. 12, 13 DSGVO verpflichtet,
-                            Ihnen folgende datenschutzrechtliche Pflichtinformationen zur Verfügung zu stellen: Wenn Sie uns per E-Mail kontaktieren,
-                            verarbeiten wir Ihre personenbezogenen Daten nur, soweit an der Verarbeitung ein berechtigtes Interesse besteht (Art. 6 Abs. 1 lit. f DSGVO),
-                            Sie in die Datenverarbeitung eingewilligt haben (Art. 6 Abs. 1 lit. a DSGVO), die Verarbeitung für die Anbahnung, Begründung,
-                            inhaltliche Ausgestaltung oder Änderung eines Rechtsverhältnisses zwischen Ihnen und uns erforderlich sind (Art. 6 Abs. 1 lit. b DSGVO)
-                            oder eine sonstige Rechtsnorm die Verarbeitung gestattet. Ihre personenbezogenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern,
-                            Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens).
-                            Zwingende gesetzliche Bestimmungen – insbesondere steuer- und handelsrechtliche Aufbewahrungsfristen – bleiben unberührt.
-                            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.
-                            Ihnen steht außerdem ein Recht auf Widerspruch, auf Datenübertragbarkeit und ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
-                            Ferner können Sie die Berichtigung, die Löschung und unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.
-                            Details entnehmen Sie unserer Datenschutzerklärung .</p>
+                        <p>Diese Mail wurde im Auftrag von Bredow-IT erzeugt und automatisch durch https://jan-bredow.de versendet.</p>
                     </div>
 
                     <!-- END MAIN CONTENT AREA -->
