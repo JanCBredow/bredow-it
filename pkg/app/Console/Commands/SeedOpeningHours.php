@@ -15,7 +15,7 @@ class SeedOpeningHours extends Command
      *
      * @var string
      */
-    protected $signature = 'seedopenings:testcenter';
+    protected $signature = 'open:times';
 
     /**
      * The console command description.
@@ -41,6 +41,9 @@ class SeedOpeningHours extends Command
      */
     public function handle()
     {
+
+        echo 'starting seeding opening hours..';
+
         $days = [
             'MONDAY' => [
                 'start' => Carbon::parse('08:00'),
@@ -69,18 +72,24 @@ class SeedOpeningHours extends Command
         ];
 
         $testCenter = TestCenter::first();
+
         foreach ($days as $key => $day) {
             $i = 0;
-            while ($day['start']->copy()->addMinutes(($i+1) * 30) <= $day['end']) {
+            while (
+                $day['start']->copy()->addMinutes(($i+1) * 30)
+                <=
+                $day['end']) {
                 $opening = TestCenterOpeningHour::make([
                     "day" => $key,
                     "capacity" => 1,
                     "start" => $day['start']->copy()->addMinutes(30 * $i)->toTimeString(),
                     "end" => $day['start']->copy()->addMinutes(30 * ($i + 1))->toTimeString()
                 ]);
+
                 $opening->testCenter()->associate($testCenter);
                 $opening->save();
                 $i++;
+                echo 'saving another opening';
             }
         }
     }
