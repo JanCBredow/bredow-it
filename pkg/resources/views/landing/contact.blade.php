@@ -7,7 +7,6 @@
         <div class="relative isolate bg-gray-800">
             <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
 
-
                 <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <div
@@ -75,7 +74,7 @@
                                        href="mailto:info@bredow.systems">info@bredow.systems</a></dd>
                             </div>
 
-                            <!-- <div class="flex gap-x-4">
+                             <div class="flex gap-x-4">
                                 <dt class="flex-none">
                                     <span class="sr-only">Verkauf</span>
                                     <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -83,9 +82,9 @@
                                     </svg>
 
                                 </dt>
-                                <dd><a class="hover:text-green-400" href="tel:+49 641 79497532">Sales-Hotline +49 641 79497532</a></dd>
+                                <dd><a class="hover:text-green-400" href="tel:+49 641 79497532">Sales-Hotline +49 163 2988 489</a></dd>
 
-                            </div> -->
+                            </div>
 
                             <div class="flex gap-x-4">
 
@@ -108,7 +107,7 @@
 
                 <!-- HOW-TO-GUIDE -->
 
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center px-4 py-4 pt-5 pb-5">
                     <div class="flow-root">
                         <ul role="list" class="-mb-8">
 
@@ -119,9 +118,9 @@
                                     <div class="relative flex space-x-3">
 
                                         <div>
-                                            <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white">
+                                            <span class="h-8 w-8 rounded-full bg-red-400 flex items-center justify-center ring-8 ring-white">
                                                 <svg class="h-5 w-5 text-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                                 </svg>
                                             </span>
                                         </div>
@@ -129,14 +128,13 @@
 
                                         <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                                             <div>
-                                                <p class="text-sm text-white"> Sie wenden sich mit all Ihren Problemen an mich</p>
+                                                <p class="text-sm text-white"> Rufen Sie mich an</p>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </li>
-
                             <li>
                                 <div class="relative pb-8">
 
@@ -160,7 +158,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li>
                                 <div class="relative pb-8">
                                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
@@ -168,9 +165,10 @@
                                     <div class="relative flex space-x-3">
 
                                         <div>
-                                            <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
-                                                <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+
+                                            <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white">
+                                                <svg class="h-5 w-5 text-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
                                                 </svg>
                                             </span>
                                         </div>
@@ -184,16 +182,16 @@
 
                                 </div>
                             </li>
-
                             <li>
                                 <div class="relative pb-8">
 
                                     <div class="relative flex space-x-3">
 
+
                                         <div>
-                                            <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white">
-                                                <svg class="h-5 w-5 text-red" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                                            <span class="h-8 w-8 rounded-full bg-green-400 flex items-center justify-center ring-8 ring-white">
+                                                <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
                                                 </svg>
                                             </span>
                                         </div>
@@ -201,7 +199,7 @@
 
                                         <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                                             <div>
-                                                <p class="text-sm text-white"> Wir feiern den Abschluss der Installation Ihrer IT-Infrastruktur</p>
+                                                <p class="text-sm text-white"> Wir feiern!</p>
                                             </div>
                                         </div>
                                     </div>
