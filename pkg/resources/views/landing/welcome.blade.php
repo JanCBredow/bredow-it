@@ -3,7 +3,7 @@
     @livewire('landing-header')
 
     <div class="bg-gray-900">
-        <div class="bg-white">
+        <div class="bg-white py-15">
 
             <main>
 
@@ -103,7 +103,7 @@
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
                                     <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                         <path fill-rule="evenodd" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                                        <path fill-rule="evenodd" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
                                     </svg>
                                     24/7 Support
                                 </dt>
@@ -158,7 +158,7 @@
                 </section>
 
                 <!-- Pricing section -->
-                <div class="relative isolate bg-white lg:px-8">
+                <div class="relative isolate mt-12 bg-white lg:px-8">
                     <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
                         <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
                     </div>
@@ -207,7 +207,7 @@
                                     Geteilter Server mit isolierten Diensten
                                 </li>
                             </ul>
-                            <a href="{{route('bookings.create')}" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren</a>
+                            <a href="{{route('bookings.create')}}" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren </a>
                         </div>
                         <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-gray-900 shadow-2xl">
                             <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Managed-Hosting</h3>
@@ -252,6 +252,9 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- FAQ section  WIP, temporary placeholder-->
+                <div class="py-3"></div>
 
             </main>
 

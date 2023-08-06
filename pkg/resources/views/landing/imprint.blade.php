@@ -1,95 +1,58 @@
 <x-guest-layout>
     <div>
         @livewire('header')
-        <div class="relative py-16 bg-gray-800 overflow-hidden">
-            <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
-                <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
-                    <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
-                        <defs>
-                            <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
-                    </svg>
-                    <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
-                        <defs>
-                            <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
-                    </svg>
-                    <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
-                        <defs>
-                            <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
-                    </svg>
-                </div>
-            </div>
-            <div class="relative px-4 sm:px-6 lg:px-8">
-                <div class="text-lg max-w-prose mx-auto">
-                    <h1>
-                        <span class="block text-base text-xl text-center text-indigo-600 font-semibold tracking-wide uppercase">Impressum</span>
-                    </h1>
-                </div>
-                <div class="mt-6 prose prose-indigo prose-lg text-white mx-auto">
 
-                    <h2 class="text-white">Betreiber</h2>
 
-                    <p>
-                    <h4 class="text-white">Angaben gemäß §5 TMG</h4>
-                    <br>Jan Christopher Bredow
-                    <br>Rodheimerstraße 30
-                    <br>35398 Gießen
-                    <br>+49 641 79799914
-                    <p>
+        <div class="bg-gray-800 text-white">
+            <div class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8">
+                <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
+                <div class="mx-auto max-w-3xl">
 
-                    <p>
-                        Bredow-IT ausdrücklich als Softwaredienstleister darauf hin, dass Bredow-IT niemals Betreiber des Corona Testzentrums ist,
-                        sondern lediglich im Auftrag Buchungen tätigt.
-                    </p>
+                    <div class="bg-gray-600 text-white px-6 py-8 lg:px-8">
+                        <div class="mx-auto max-w-3xl text-base leading-7 text-white">
 
-                    <h4 class="text-white">EU-Streitschlichtung</h4>
-                    <p>
-                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" rel="nofollow" target="_blank">https://ec.europa.eu/consumers/odr</a>.
-                        Unsere E-Mail-Adresse finden Sie oben im Impressum.
-                    </p>
-                    <p>Online Streitbeilegung gemäß Art 14 Abs. 1 ODR-Verordnung</p>
-                    <p>
-                        Es besteht eine Plattform der EU zur außergerichtlichen Online-Streitbeilegung:
-                        <a href="https://ec.europa.eu/consumers/odr" rel="nofollow" target="_blank">https://ec.europa.eu/consumers/odr</a>. Wir sind nicht verpflichtet, an einem Verbraucherschlichtungsverfahren
-                        teilzunehmen und hierzu auch nicht bereit.
-                    </p>
+                            <p class="pt-24 text-base font-semibold leading-7 text-indigo-400"><a href="{{ url()->previous() }}">Zurück</a></p>
+                            <p class="mt-4 text-4xl"><strong>Impressum nach § 5 TMG</strong></p>
+                            <p class="mt-8"><strong>bredow.systems</strong></p>
+                            <p><strong>Rodheimerstraße 30</strong></p>
+                            <p><strong>35398 Gießen</strong></p>
 
-                    <h4 class="text-white">Corona Test Software/ Softwaredienstleister</h4>
+                            <p class="mt-4 text-xl"><strong>Geschäftsführer: Jan Christopher Bredow</strong></p>
+                            <p><strong>info@bredow.systems</strong></p>
+                            <p><strong>Telefon: +49 641 79799914</strong></p>
 
-                    <p>Bredow-IT (im Folgenden "Softwaredienstleister" genannt) wickelt als Dienstleister die Buchungen im
-                        Auftrag des Betreibers ab:
-                    </p>
+                            <p class="mt-4 text-xl"><strong>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz</strong></p>
+                            <p><strong>Ust-ID: beantragt</strong></p>
 
-                    <p>
-                    <br>Bredow-IT
-                    <br>Inh. Jan Christopher Bredow
-                    <br>Rodheimerstraße 30
-                    <br>35398 Gießen
-                    <p>
-                        E-Mail: info@jan-bredow.de
-                        Telefon: +49 641 79799914
-                    </p>
+                            <p class="mt-4 text-xl"><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong></p>
+                            <p><strong>Jan Christopher Bredow</strong></p>
+                            <p><strong>Rodheimerstraße 30</strong></p>
+                            <p><strong>35398 Gießen</strong></p>
 
-                    <h4 class="text-white">EU-Streitschlichtung</h4>
-                    <p>
-                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" rel="nofollow" target="_blank">https://ec.europa.eu/consumers/odr</a>.
-                        Unsere E-Mail-Adresse finden Sie oben im Impressum.
-                    </p>
+                            <p class="mt-4 text-xl"><strong>Zuständige Aufsichtsbehörde</strong></p>
+                            <p><strong>Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahn</strong></p>
+                            <p><strong>Tulpenfeld 4</strong></p>
+                            <p><strong>D-53113 Bonn</strong></p>
+
+                            <p class="mt-4 text-xl"><strong>Streitschlichtung</strong></p>
+                            <p><strong>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>.</strong></p>
+                            <p><strong>Unsere E-Mail-Adresse finden Sie oben im Impressum.</strong></p>
+                            <p><strong>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Bei Fragen und Problemen wenden Sie sich gerne an <a href="mailto://support@bredow.systems" class="text-indigo-400">support@jan-bredow.de</a>.</strong></p>
+
+                            <p class="mt-4 text-xl"><strong>Haftung für Inhalte</strong></p>
+                            <p><strong>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</strong></p>
+
+                            <p class="mt-4 text-xl"><strong>Haftung für Links</strong></p>
+                            <p><strong>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</strong></p>
+
+                            <p class="mt-4 text-xl"><strong>Urheberrecht</strong></p>
+                            <p><strong>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</strong></p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </main>
 
         @livewire('footer')
 
