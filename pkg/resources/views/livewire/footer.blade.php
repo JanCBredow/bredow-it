@@ -9,39 +9,39 @@
                             <h3 class="text-sm font-semibold leading-6 text-white">Lösungen</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Managed-Services</a>
+                                    <a href="{{route('bookings.create')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Managed-Services</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Domain & Hosting</a>
+                                    <a href="{{route('bookings.create')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Domain & Hosting</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Softwareentwicklung</a>
+                                    <a href="{{route('bookings.create')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Softwareentwicklung</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Virtualisierung</a>
+                                    <a href="{{route('bookings.create')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Virtualisierung</a>
                                 </li>
                             </ul>
                         </div>
+
                         <div class="mt-10 md:mt-0">
                             <h3 class="text-sm font-semibold leading-6 text-white">Hilfe</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Support</a>
+                                    <a href="{{route('contact')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Support</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Dokumentationen</a>
+                                    <a href="https://docs.bredow.systems" class="text-sm leading-6 text-gray-300 hover:text-white">Dokumentationen</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Preise</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                                    <a href="{{route('bookings.create')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Preise</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
+
+                        <!-- <div>
                             <h3 class="text-sm font-semibold leading-6 text-white">Bredow-IT</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
@@ -54,22 +54,21 @@
                                     <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Partner</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
+
                         <div class="mt-10 md:mt-0">
                             <h3 class="text-sm font-semibold leading-6 text-white">Rechtliches</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Impressum</a>
+                                    <a href="{{route('imprint')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Impressum</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Datenschutz</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">AGB</a>
+                                    <a href="{{route('privacy')}}" class="text-sm leading-6 text-gray-300 hover:text-white">Datenschutz</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                 </div>
                 <div class="mt-10 xl:mt-0">
                     <h3 class="text-sm font-semibold leading-6 text-white">Bleiben Sie informiert</h3>

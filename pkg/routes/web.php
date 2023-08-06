@@ -50,19 +50,6 @@ Route::get('/imprint', function () {
     return view('landing.imprint');
 })->name('imprint');
 
-Route::get('/terms', function () {
-    return view('landing.terms');
-})->name('terms');
 
-
-## Deprecated routes
-
-## Route::get('/qr/{qrCode}', [QrController::class, 'scan']);
-## Route::get('/locations', function () {
-##     return view('landing.locations');
-## })->name('locations');
-## Route::get('/jobs', function () {
-##     return view('landing.imprint');
-## })->name('jobs');
 
 
