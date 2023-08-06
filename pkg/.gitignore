@@ -15,3 +15,4 @@ yarn-error.log
 /.vscode
 /pkg/composer.lockrr
 .rr.yaml
+.idea

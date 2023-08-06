@@ -253,9 +253,6 @@
                     </div>
                 </div>
 
-                <!-- FAQ section  WIP, temporary placeholder-->
-                <div class="py-3"></div>
-
             </main>
 
         </div>
