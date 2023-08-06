@@ -207,7 +207,7 @@
                                     Geteilter Server mit isolierten Diensten
                                 </li>
                             </ul>
-                            <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren</a>
+                            <a href="{{route('bookings.create')}" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren</a>
                         </div>
                         <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-gray-900 shadow-2xl">
                             <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Managed-Hosting</h3>

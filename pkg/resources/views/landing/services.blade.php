@@ -151,7 +151,7 @@
                 px-6
                 lg:px-8">
                 <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Häufig gestellte Fragen</h2>
-                <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300">Haben Sie ein besonderes Anliegen? <a href="mailto://support@jan-bredow.de" class="font-semibold text-indigo-400 hover:text-indigo-300">Kontaktieren Sie unser Support-Team</a></p>
+                <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300">Haben Sie ein besonderes Anliegen? <a href="mailto://support@bredow.systems" class="font-semibold text-indigo-400 hover:text-indigo-300">Kontaktieren Sie unser Support-Team</a></p>
                 <div class="mt-8">
                     <dl class="sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
                         <div>

@@ -15,7 +15,7 @@ class SeedOpeningHours extends Command
      *
      * @var string
      */
-    protected $signature = 'open:times';
+    protected $signature = 'openings:seed';
 
     /**
      * The console command description.
@@ -103,6 +103,7 @@ class SeedOpeningHours extends Command
 
 
         info('saving morning openings... \r\n');
+
         foreach ($days_morning as $key => $day) {
             $i = 0;
             while (
