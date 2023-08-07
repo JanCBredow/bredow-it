@@ -328,14 +328,14 @@
 
                             <div class="relative flex items-start">
                                 <div class="flex items-center h-5">
-                                    <input wire:model="terms" id="terms" aria-describedby="terms-description"
+                                    <input wire:model="privacy" id="terms" aria-describedby="terms-description"
                                            name="terms" type="checkbox"
                                            class="@error('terms') border-red-300 text-red-900 placeholder-red-300 @enderror focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                 </div>
                                 <div class="ml-3 text-sm">
                                     <label for="terms" class="font-medium text-gray-700"></label>
                                     <span id="terms-description" class="text-gray-500"> Ich akzeptiere die <a
-                                            class="text-indigo-500" href="{{ route('terms') }}">Allgemeinen Geschäftsbedinungen</a> und <a
+                                            class="text-indigo-500" href="{{ route('privacy') }}">Allgemeinen Geschäftsbedinungen</a> und <a
                                             class="text-indigo-500" href="{{ route('privacy') }}">Datenschutzbestimmungen</a>.</span>
                                 </div>
                             </div>
