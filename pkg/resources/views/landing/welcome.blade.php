@@ -143,7 +143,7 @@
                                     <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
                                 </svg>
                                 <blockquote class="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-                                    <p>Herr Bredow is ein äußerst kompetenter und freundlicher Entwickler und Systemadministrator. Meine Webservice-Einrichtung (Mail und Cloudsysteme) habe ich von ihm einrichten lassen. Mit dem Resultat bin ich sehr zufrieden.</p>
+                                    <p>Ich hatte das Privileg, mit Jan Bredow an meinem Website-Projekt zusammenzuarbeiten, und ich bin wirklich beeindruckt. Jans Hingabe und Fachwissen kommen während des gesamten Prozesses zum Vorschein. Seine sorgfältige Aufmerksamkeit für Details und seine Fähigkeit, meine Bedürfnisse zu erfassen, führten zu einer funktionalen und optisch ansprechenden Website. Die benutzerfreundliche Oberfläche und das responsive Design betonen seine technischen Fähigkeiten. Jans Engagement, sich über Branchentrends auf dem Laufenden zu halten, gewährleistet eine moderne und sichere Website. Ich empfehle Herrn Bredow wärmstens für jedes Website-Projekt.</p>
                                 </blockquote>
                             </div>
                             <div class="col-end-1 w-16 lg:row-span-4 lg:w-72">
