@@ -20,7 +20,6 @@ Route::prefix('/bookings')->group(function () {
 });
 
 Route::prefix('/contact')->group(function(){
-
     Route::get('/', [ContactController::class, 'contact'])->name('contact');
     Route::post('/', [ContactController::class, 'thankYou'])->name('contact-thanks');
 });
@@ -33,6 +32,11 @@ Route::get('/', function () {
 Route::get('/services', function () {
     return view('landing.services');
 })->name('services');
+
+Route::get('/lol', function () {
+    return view('test');
+})->name('lol');
+
 
 Route::get('/about', function () {
     return view('landing.imprint');

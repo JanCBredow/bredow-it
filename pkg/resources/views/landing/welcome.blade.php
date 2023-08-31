@@ -22,7 +22,8 @@
                             </div>
                             <div class="text-center">
                                 <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Bredow-IT</h1>
-                                <h2 class="text-2xl font-bold tracking-tight text-white sm:text-6xl">Managed-Hosting, Softwareentwicklung, Beratung.</h2>
+                                <br />
+                                <h2 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">Managed-Hosting, Softwareentwicklung, Beratung.</h2>
                                 <p class="mt-6 text-lg leading-8 text-gray-300">Skalieren Sie ihre digitale Infrastruktur aufs nächste Level, während Sie sich auf Ihre Kernaktivitäten konzentrieren.</p>
                                 <div class="mt-10 flex items-center justify-center gap-x-6">
                                     <a href="{{route('bookings.create')}}" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Jetzt beraten lassen</a>
@@ -31,22 +32,596 @@
                             </div>
                         </div>
 
-                        <!-- Logo cloud -->
-                        <div class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48">
-                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48">
-                            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48">
-                            <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48">
-                            <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48">
-                        </div>
                     </div>
                     <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
                         <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
                     </div>
                 </div>
 
+                <!-- Pricing section -->
+
+                <div class="bg-white py-24 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-4xl text-center">
+                            <h2 class="text-base font-semibold leading-7 text-indigo-600">Produkte im Vergleich</h2>
+                            <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">IT für Ihr Business: Angebote im direkten Vergleich</p>
+                        </div>
+                        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Strategische IT-Entscheidungen für Ihr Unternehmen: Angebote im direkten Vergleich. Hervorgehobene Unterscheidungen und effiziente technologische Lösungen.</p>
+
+                        <!-- mobile -->
+                        <div class="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
+
+                            <section class="p-8">
+                                <h3 id="tier-basic" class="text-sm font-semibold leading-6 text-gray-900">Starter</h3>
+                                <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
+                                    <span class="text-4xl font-bold">9</span>
+                                    <span class="text-sm font-semibold">/monat</span>
+                                </p>
+                                <a href="{{ route('bookings.create') }}" aria-describedby="tier-basic" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Termin vereinbaren</a>
+                                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Domain </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> IPv4 & IPv6 Adresse </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Leistungsstarke VM </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> 24/7 digitaler Kundensupport </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="p-8 rounded-xl bg-gray-400/5 ring-1 ring-inset ring-gray-200">
+                                <h3 id="tier-essential" class="text-sm font-semibold leading-6 text-gray-900">Premium</h3>
+                                <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
+                                    <span class="text-4xl font-bold">29</span>
+                                    <span class="text-sm font-semibold">/monat</span>
+                                </p>
+                                <a href="{{ route('bookings.create') }}" aria-describedby="tier-essential" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500">Termin vereinbaren</a>
+                                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Domain </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> IPv4 & IPv6 Adresse </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Importing and exporting </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span>
+                  Team members
+                  <span class="text-sm leading-6 text-gray-500">(Up to 20 users)</span>
+                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Leistungsstarke VM </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Basic reports </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> 24/7 digitaler Kundensupport </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Quarterly product workshops </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Priority phone support </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="p-8">
+                                <h3 id="tier-premium" class="text-sm font-semibold leading-6 text-gray-900">Enterprise</h3>
+                                <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
+                                    <span class="text-4xl font-bold">59</span>
+                                    <span class="text-sm font-semibold">/monat</span>
+                                </p>
+                                <a href="{{ route('bookings.create') }}" aria-describedby="tier-premium" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Termin vereinbaren</a>
+                                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-900">
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Domain </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> IPv4 & IPv6 Adresse </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Importing and exporting </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span>
+                  Team members
+                  <span class="text-sm leading-6 text-gray-500">(Up to 50 users)</span>
+                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Leistungsstarke VM </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Basic reports </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Professional reports </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Custom report builder </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul role="list" class="space-y-4">
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> 24/7 digitaler Kundensupport </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Quarterly product workshops </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> Priority phone support </span>
+                                            </li>
+                                            <li class="flex gap-x-3">
+                                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                <span> 1:1 onboarding tour </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+
+                        </div>
+
+                        <!-- desktop -->
+                        <div class="isolate mt-20 hidden lg:block">
+                            <div class="relative -mx-8">
+                                <div class="absolute inset-x-4 inset-y-0 -z-10 flex">
+                                    <div class="flex w-1/4 px-4" style="margin-left: 50%" aria-hidden="true">
+                                        <div class="w-full rounded-t-xl border-x border-t border-gray-900/10 bg-gray-400/5"></div>
+                                    </div>
+                                </div>
+                                <table class="w-full table-fixed border-separate border-spacing-x-8 text-left">
+                                    <caption class="sr-only">
+                                        Servicevergleich
+                                    </caption>
+                                    <colgroup>
+                                        <col class="w-1/4">
+                                        <col class="w-1/4">
+                                        <col class="w-1/4">
+                                        <col class="w-1/4">
+                                    </colgroup>
+
+
+
+                                    <thead>
+                                    <tr>
+                                        <td></td>
+                                        <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
+                                            <div class="text-sm font-semibold leading-7 text-gray-900">Starter</div>
+                                        </th>
+                                        <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
+                                            <div class="text-sm font-semibold leading-7 text-gray-900">Premium</div>
+                                        </th>
+                                        <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
+                                            <div class="text-sm font-semibold leading-7 text-gray-900">Enterprise</div>
+                                        </th>
+                                    </tr>
+                                    </thead>
+
+
+
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><span class="sr-only">Preise</span></th>
+                                        <td class="px-6 pt-2 xl:px-8">
+                                            <div class="flex items-baseline gap-x-1 text-gray-900">
+                                                <span class="text-4xl font-bold">Ab 25 EUR</span>
+                                                <span class="text-sm font-semibold leading-6">/monat</span>
+                                            </div>
+                                            <a href="{{ route('bookings.create') }}" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Termin vereinbaren</a>
+                                        </td>
+                                        <td class="px-6 pt-2 xl:px-8">
+                                            <div class="flex items-baseline gap-x-1 text-gray-900">
+                                                <span class="text-4xl font-bold">Ab 50 EUR</span>
+                                                <span class="text-sm font-semibold leading-6">/monat</span>
+                                            </div>
+                                            <a href="{{ route('bookings.create') }}" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500">Termin vereinbaren</a>
+                                        </td>
+                                        <td class="px-6 pt-2 xl:px-8">
+                                            <div class="flex items-baseline gap-x-1 text-gray-900">
+                                                <span class="text-4xl font-bold">Individuell</span>
+                                            </div>
+                                            <a href="{{ route('bookings.create') }}" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Termin vereinbaren</a>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr class="pt-24 sm:pt-8">
+                                        <th scope="colgroup" colspan="4" class="pb-4 text-xl font-semibold leading-6 text-gray-900 pt-8">
+                                            Dienstleistung
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Domain
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Basic</span>
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            IPv4 & IPv6 Adresse
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Basic</span>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Leistungsstarke VM
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Basic</span>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Dedizierter Server
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                            </svg>
+                                        </td>
+
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                            </svg>
+                                        </td>
+
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Support per E-Mail, Ticket
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Basic</span>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="pt-24 sm:pt-8">
+                                        <th scope="colgroup" colspan="4" class="pb-4 text-xl font-semibold leading-6 text-gray-900 pt-8">
+                                            Support
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Priorisierter Support
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Nicht in Starter enthalten</span>
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Echtzeitsupport
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Nicht in Starter enthalten</span>
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Nicht in Premium enthalten</span>
+                                        </td>
+
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <svg class="mx-auto h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="sr-only">Included in Premium</span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="pt-24 sm:pt-8">
+                                        <th scope="colgroup" colspan="4" class="pb-4 text-xl font-semibold leading-6 text-gray-900 pt-8">
+                                            Hardware
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/10"></div>
+                                        </th>
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            CPU
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 4 Kerne</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">bis 32 Kerne</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 128 Kerne</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Arbeitsspeicher
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">bis zu 8GB</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">bis zu 128GB</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 2048GB</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Internet
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">1GB/s (Fair use)</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">100GB/s (Fair use)</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">1TB/s (Fair use)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="py-4 text-sm font-normal leading-6 text-gray-900">
+                                            Speicher
+                                            <div class="absolute inset-x-8 mt-4 h-px bg-gray-900/5"></div>
+                                        </th>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 100GB SSD</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 1TB SSD</div>
+                                        </td>
+                                        <td class="px-6 py-4 xl:px-8">
+                                            <div class="text-center text-sm leading-6 text-gray-500">Bis zu 20TB SSD</div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- Feature section -->
-                <div class="mt-8 sm:mt-12 mb-4 sm:mb-4">
+                <div class="mt-8 sm:mt-12 mb-4 sm:mb-4 py-32 sm:py-12">
                     <div class="mx-auto max-w-7xl px-6 lg:px-8">
                         <div class="mx-auto max-w-2xl sm:text-center">
                             <h2 class="text-base font-semibold leading-7 text-indigo-600">Alles, was Sie brauchen</h2>
@@ -62,7 +637,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+                    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8 py-8 sm:py-24">
                         <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
@@ -124,137 +699,153 @@
                 </div>
 
                 <!-- Header for testimonials-->
-                <div class="bg-white px-6 lg:px-8 py-5 sm:py-5">
+                <div class="bg-white px-6 lg:px-8 pt-8 sm:pt-24 py-8 sm:py-4">
                     <div class="mx-auto max-w-2xl text-center">
                         <p class="text-base font-semibold leading-7 text-indigo-600">Was meine Kunden sagen...</p>
                         <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 text-center sm:text-6xl">Kundenrezensionen</h2>
                     </div>
                 </div>
 
-                <!-- Testimonial section -->
-                <section class="isolate overflow-hidden bg-white px-6 lg:px-8">
-                    <div class="relative mx-auto max-w-2xl py-12 sm:py-16 lg:max-w-4xl">
-                        <div class="absolute left-1/2 top-0 -z-10 h-[50rem] w-[90rem] -translate-x-1/2 bg-[radial-gradient(50%_100%_at_top,theme(colors.indigo.100),white)] opacity-20 lg:left-36"></div>
-                        <div class="absolute inset-y-0 right-1/2 -z-10 mr-12 w-[150vw] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-20 md:mr-0 lg:right-full lg:-mr-36 lg:origin-center"></div>
-                        <figure class="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
-                            <div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
-                                <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute -top-12 left-0 -z-10 h-32 stroke-gray-900/10">
-                                    <path id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
-                                    <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
-                                </svg>
-                                <blockquote class="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-                                    <p>Ich hatte das Privileg, mit Jan Bredow an meinem Website-Projekt zusammenzuarbeiten, und ich bin wirklich beeindruckt. Jans Hingabe und Fachwissen kommen während des gesamten Prozesses zum Vorschein. Seine sorgfältige Aufmerksamkeit für Details und seine Fähigkeit, meine Bedürfnisse zu erfassen, führten zu einer funktionalen und optisch ansprechenden Website. Die benutzerfreundliche Oberfläche und das responsive Design betonen seine technischen Fähigkeiten. Jans Engagement, sich über Branchentrends auf dem Laufenden zu halten, gewährleistet eine moderne und sichere Website. Ich empfehle Herrn Bredow wärmstens für jedes Website-Projekt.</p>
-                                </blockquote>
-                            </div>
-                            <div class="col-end-1 w-16 lg:row-span-4 lg:w-72">
-                                <img class="rounded-xl bg-indigo-50 lg:rounded-3xl width=576px height=576px" src="/img/sam-oakwood.png" alt="">
-                            </div>
-                            <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-                                <div class="font-semibold text-gray-900">Samuel Benedikt Alexander Eichelmann</div>
-                                <div class="mt-1 text-gray-500">CEO von sam-oakwood.com</div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
+                <!-- Testimonials -->
 
-                <!-- Pricing section -->
-                <div class="relative isolate mt-12 bg-white lg:px-8">
-                    <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
-                        <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-                    </div>
-                    <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Preise</h2>
-                        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Der richtige Preis für Sie</p>
-                    </div>
-                    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Wählen Sie zwischen 2 Paketen, oder kontaktieren Sie mich für ein individuelles Angebot</p>
-                    <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
-                        <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0 rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl">
-                            <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">Startpaket</h3>
-                            <p class="mt-4 flex items-baseline gap-x-2">
-                                <span class="text-5xl font-bold tracking-tight text-gray-900">ab 55€</span>
-                                <span class="text-base text-gray-500">/monat</span>
-                            </p>
-                            <p class="mt-6 text-base leading-7 text-gray-600">Wir orchestrieren Ihre digitale Infrastruktur, während Sie sich aufs Geschäft konzentrieren</p>
-                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 sm:mt-10 text-gray-600">
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Domain, VM & IPv4,- IPv6
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    24/7 Kundensupport
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    99,9% garantierte uptime
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Schutz vor DDoS und sonstigen Attacken
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Geteilter Server mit isolierten Diensten
-                                </li>
-                            </ul>
-                            <a href="{{route('bookings.create')}}" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Erstgespräch vereinbaren </a>
-                        </div>
-                        <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-gray-900 shadow-2xl">
-                            <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Managed-Hosting</h3>
-                            <p class="mt-4 flex items-baseline gap-x-2">
-                                <span class="text-5xl font-bold tracking-tight text-white">Ab 299€</span>
-                                <span class="text-base text-gray-400">/monat</span>
-                            </p>
-                            <p class="mt-6 text-base leading-7 text-gray-300">Eine wirklich Leistungsstarke und skalierbare Plattform für Ihr Unternehmen, egal was Sie machen</p>
-                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 sm:mt-10 text-gray-300">
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    AMD EPYC / Intel Plattform
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Bis zu 2TB RAM
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Ungebrenzte Netzwerknutzung
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Live Monitoring
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Priorisierter Support
-                                </li>
-                            </ul>
-                            <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Erstgespräch vereinbaren</a>
+                <div class="bg-white isolate overflow-hidden px-6 lg:px-8">
+                    <div class="relative mx-auto max-w-2xl lg:max-w-4xl py-12 sm:py-16">
+                        <h2 class="sr-only">Customer Reviews</h2>
+
+                        <div class="-my-10">
+                            <div class="flex space-x-4 text-sm text-gray-500">
+                                <div class="flex-none py-10">
+                                    <img src="{{ asset('img/sam-oakwood.png') }}" alt="" class="h-10 w-10 rounded-full bg-gray-100">
+                                </div>
+                                <div class="flex-1 py-10">
+                                    <h3 class="font-medium text-gray-900">Samuel Benedikt Alexander Eichelmann</h3>
+                                    <p><time datetime="2021-07-16">Juli, 2023</time></p>
+
+                                    <div class="mt-4 flex items-center">
+                                        <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="sr-only">5 von 5 Sternen</p>
+
+                                    <div class="prose prose-sm mt-4 max-w-none text-gray-500">
+                                        <p>Ich hatte das Privileg, mit Jan Bredow an meinem Website-Projekt zusammenzuarbeiten, und ich bin wirklich beeindruckt. Jans Hingabe und Fachwissen kommen während des gesamten Prozesses zum Vorschein. Seine sorgfältige Aufmerksamkeit für Details und seine Fähigkeit, meine Bedürfnisse zu erfassen, führten zu einer funktionalen und optisch ansprechenden Website. Die benutzerfreundliche Oberfläche und das responsive Design betonen seine technischen Fähigkeiten. Jans Engagement, sich über Branchentrends auf dem Laufenden zu halten, gewährleistet eine moderne und sichere Website. Ich empfehle Herrn Bredow wärmstens für jedes Website-Projekt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4 text-sm text-gray-500">
+                                <div class="flex-none py-10">
+                                    <img src="{{ asset('img/ak.jpg') }}" alt="" class="h-10 w-10 rounded-full bg-gray-100">
+                                </div>
+                                <div class="flex-1 py-10 border-t border-gray-200">
+                                    <h3 class="font-medium text-gray-900">Ann-Kathrin Viktoria Vorwerg</h3>
+                                    <p><time datetime="2021-07-12">August, 2023</time></p>
+
+                                    <div class="mt-4 flex items-center">
+                                        <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                        <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="sr-only">5 von 5 Sternen</p>
+
+                                    <div class="prose prose-sm mt-4 max-w-none text-gray-500">
+                                        <p>Fantastisch! Hat mein Notebook gerettet, alle hatten die Hoffnung aufgegeben, Jan nicht. Er hat es geschafft, läuft für kleines Geld wie mein großer Computer. Nur zu Empfehlen!</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- FAQ section  WIP, temporary placeholder-->
-                <div class="py-3"></div>
+                <div class="bg-white">
+                    <div class="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
+                        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                            <div class="lg:col-span-5">
+                                <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Häufig gestellte Fragen</h2>
+                                <p class="mt-4 text-base leading-7 text-gray-600">Sollte ich Ihre Fragen hier nicht beantworten können, zögern Sie nicht, unser <a href="{{ route('contact') }}" class="font-semibold text-indigo-600 hover:text-indigo-500">Supportteam</a> zu kontaktieren.</p>
+                            </div>
+                            <div class="mt-10 lg:col-span-7 lg:mt-0">
+                                <dl class="space-y-10">
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Welche Arten von Hosting-Diensten bieten Sie an?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Wir bieten Shared Hosting, VPS (Virtual Private Server) Hosting, Dedicated Server Hosting und Cloud Hosting an.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Was ist Managed Hosting und welche Vorteile bietet es?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Managed Hosting bedeutet, dass wir uns um die technische Wartung, Sicherheit und Updates Ihrer Website oder Anwendung kümmern. Dadurch können Sie sich auf Ihr Unternehmen konzentrieren, während wir den technischen Teil übernehmen.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Unterstützen Sie die Suchmaschinenoptimierung (SEO) für gehostete Websites?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Ja, wir bieten Tools und Ressourcen an, die Ihnen bei der Verbesserung Ihrer SEO-Bemühungen helfen können, wie z. B. schnelle Ladezeiten und SSL-Zertifikate.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Welche Programmiersprachen und Entwicklungsframeworks werden von Ihrem Hosting unterstützt?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Wir unterstützen eine Vielzahl von Programmiersprachen und Frameworks, darunter PHP, Python, Java und mehr. Bitte kontaktieren Sie mich für spezifische Anforderungen.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Bieten Sie SSL-Zertifikate für die Sicherheit meiner Website an?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Ja, wir bieten kostenlose und kostenpflichtige SSL-Zertifikate an, um die Sicherheit Ihrer Website zu gewährleisten.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Kann ich meine Website von einem anderen Hosting-Anbieter zu Ihnen umziehen?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Ja, wir bieten einen Umzugsservice an, um Ihre Website nahtlos von einem anderen Anbieter zu uns zu transferieren.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Kann ich meine E-Mails über Ihre Hosting-Services verwalten?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Ja, unsere Hosting-Services umfassen auch E-Mail-Hosting mit verschiedenen Optionen für E-Mail-Konten und Weiterleitungen.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Bieten Sie Backup-Lösungen für meine gehostete Website an?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Ja, wir bieten tägliche Backup-Lösungen an, um sicherzustellen, dass Ihre Daten geschützt sind und im Falle eines Problems wiederhergestellt werden können.</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt class="text-base font-semibold leading-7 text-gray-900">Welche Sicherheitsmaßnahmen haben Sie implementiert, um meine Website zu schützen?</dt>
+                                        <dd class="mt-2 text-base leading-7 text-gray-600">Wir verwenden Firewall-Schutz, DDoS-Abwehr, regelmäßige Sicherheitsupdates und Überwachung, um die Sicherheit Ihrer gehosteten Website zu gewährleisten.</dd>
+                                    </div>
+
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </main>
 

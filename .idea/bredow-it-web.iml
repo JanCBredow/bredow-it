@@ -184,6 +184,8 @@
       <excludeFolder url="file://$MODULE_DIR$/pkg/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/pkg/vendor/spatie/laravel-package-tools" />
       <excludeFolder url="file://$MODULE_DIR$/pkg/vendor/wire-elements/modal" />
+      <excludeFolder url="file://$MODULE_DIR$/pkg/storage/app" />
+      <excludeFolder url="file://$MODULE_DIR$/pkg/storage/framework" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
