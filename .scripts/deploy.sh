@@ -10,10 +10,10 @@ echo "Deployment started ..."
 git reset --hard
 
 # Pull the latest version of the app
-git pull origin master && chown www-data:www-data /opt/jb -R
+git pull origin master && chown www-data:www-data /opt/BredowSystems/jb -R
 
 # Install composer dependencies
-composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader && chown www-data:www-data /opt/jb -R
+composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader && chown www-data:www-data /opt/BredowSystems/jb -R
 
 # Clear the old cache
 php artisan clear-compiled
@@ -25,7 +25,7 @@ php artisan optimize
 npm install
 
 # Compile npm assets
-npm run prod  && chown www-data:www-data /opt/jb -R
+npm run prod  && chown www-data:www-data /opt/BredowSystems/jb -R
 
 # Update Browserlist
 npx browserslist@latest --update-db

@@ -18,4 +18,4 @@ jobs:
           username: root
           host: vps.jan-bredow.de
           key: ${{ secrets.SSH_KEY }}
-          script: 'cd /opt/jb/pkg/ && chmod +x ../.scripts/deploy.sh && ../.scripts/deploy.sh'
+          script: 'cd /opt/BredowSystems/jb/pkg/ && chmod +x ../.scripts/deploy.sh && ../.scripts/deploy.sh'
